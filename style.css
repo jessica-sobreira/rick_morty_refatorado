@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+#icone {
+    height: 50px;
+    width: auto;
+
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    color: #004400;
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+}
+
+.form-busca-site {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pesquisar-personagem-input {
+    border: 2px solid #004400CF;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: transparent;
+    color: black;
+    width: 80%;
+}
+
+#pesquisar-personagem-input::placeholder {
+    color: darkgrey;
+}
+
+.lupa {
+    background-color: #004400CF;
+    border: none;
+    border-radius: 4px;
+    padding: 0.9em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.lupa:hover {
+    background-color: #006600;
+    transform: scale(1.05);
+}
+
+.buscar {
+    background-color: #004400CF;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    display: flex;
+    height: 10wh;
+    width: 13vw;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buscar:hover {
+    background-color: #006600;
+    transform: scale(1.05);
+}
+
+#conteudo-principal {
+    height: auto;
+    width: 100vw;
+    background-image: url(./FUNDO.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+#personagem-card {
+    background-color: dark;
+    border: 4px solid dark;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 1em;
+    padding-left: 0;
+    margin-bottom: 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.container.card {
+    width: 35vw;
+    height: auto;
+
+}
+
+#personagem-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+
+#personagem-imagem {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+#personagem-titulo {
+    font-size: 1.5em;
+    margin-top: 0;
+
+}
+
+#personagem-info {
+    margin-bottom: 0;
+}
+
+.conteudo-detalhes {
+    margin-top: 0.1em;
+}
+
+
+.text-secondary {
+    color: lightgray;
+}
+
+.text-light {
+    color: #f0f0f0;
+}
+
+.text-body-secondary a {
+    text-decoration: none;
+}
+
+.text-body-secondary a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    text-align: center;
+    width: 100vw;
+    padding: 1.25em 0;
+    margin: 0;
+}
+
+.footer-dados {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-dados li {
+    margin: 0 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.footer-dados li:first-child {
+    margin-left: 0;
+}
+
+.footer-dados li:last-child {
+    margin-right: 0;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+button a {
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+
+.botao {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+#proximo,
+#anterior {
+    padding: 8px 16px;
+    color: #004400;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #7CFC00;
+    border: 1px solid #7CFC00;
+    border-radius: 4px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+#proximo:hover,
+#anterior:hover {
+    color: black;
+    background-color: white;
+    border: 2px dotted black;
+    font-weight: bold;
+}
+
+button {
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+}
+
+#myModal {
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.title {
+    color: #006600;
+    font-size: 3em;
+    display: flex;
+    text-align: center;
+
+}
+
+.modal-body {
+    padding: 0.5em;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.modal-body h2 {
+    font-size: 1em;
+    margin-top: 0;
+}
+
+.modal-body p {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+
+.modal-header .btn-close {
+    color: black;
+    font-size: 1em;
+}
+
+
+.modal-footer button {
+    background-color: #004400;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-footer button:hover {
+    background-color: #7CFC00;
+    color: black;
+}
+
+@media (max-width: 767px) {
+    .container.card {
+        width: 80%; 
+        max-width: none; 
+    }
+
+    .imagem-personagem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2em;
+
+    }
+.conteudo-detalhes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h5 {
+    font-size: 3em;
+
+}
+
+.buscar {
+    width: 30vw;
+    height: 10vh;
+    font-weight: bold;
+    font-size: 1.1em;
+
+}
+
+.footer-dados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+}
